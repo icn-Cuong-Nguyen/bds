@@ -15,17 +15,13 @@ and open the template in the editor.
     <body>
 
 <?php
+$a = 'abc123456';
 
-include './data.php';
+//print_r (str_split($a));
 
-$d = new data();
+$cout =  strlen($a);
 
-$provinces = $d->_getprovinces();
-
- while ($province = mysqli_fetch_assoc($provinces)){
-     print_r($province);
- }
- 
+echo substr($a,2,$cout);
  
  ?>
 </body>
